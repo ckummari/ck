@@ -1,0 +1,37 @@
+name: Generate terraform docs
+on:
+  - pull_request
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+    - name: Setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Checkout python injector script
+      uses: actions/checkout@v2
+      with:
+        repository: docs-automation
+        ref: 'main'
+        #token: ${{ secrets.INNERSOURCE_IAC_PAT }}
+        path: docs-automation
+    - name: Install dependencies
+      run: |
+        pip install -r docs-automation/requirements.txt
+    - name: Inject terraform usage into README
+      run: |
+        cd docs-automation
+        python main.py
+    - name: Docs for root module
+      uses: terraform-docs/gh-actions@v0.6.0
+      with:
+        args: "--sort-by-required --hide resources"
+        working-dir: .
+        output-file: README.md
+        output-method: inject
+        git-push: "true"
+        git-commit-message: "terraform-docs: update README.md"
