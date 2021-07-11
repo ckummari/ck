@@ -80,20 +80,23 @@ module "rds" {
 <!--- BEGIN_TF_DOCS --->
 
 <details>
-  <summary> Click To Know [ Requirements | Providers | Modules | Inputs | Outputs </summary>
-  
-## Requirements
+  <summary> Requirements</summary>
 
 | Name | Version |
 |------|---------|
 | terraform | >= 0.14 |
 | aws | 3.36.0 |
 
-## Providers
+</details>
+  
+<details>
+<summary> Providers </summary>
 
 No provider.
+</details>
 
-## Modules
+<details>
+<summary> Modules </summary>
 
 | Name | Source | Version |
 |------|--------|---------|
@@ -102,7 +105,10 @@ No provider.
 | db_param_group | ./modules/db-param-group |  |
 | db_subnet_group | ./modules/db-subnet-group |  |
 
-## Inputs
+</details>
+
+<details>
+<summary> Inputs </summary>
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -154,7 +160,10 @@ No provider.
 | username | database username | `string` | `"admin"` | no |
 | vpc\_security\_group\_ids | List of vpc security group to associate | `list(string)` | `[]` | no |
 
-## Outputs
+</details>
+
+<details>
+<summary> Outputs </summary>
 
 | Name | Description |
 |------|-------------|
