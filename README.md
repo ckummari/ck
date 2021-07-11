@@ -80,7 +80,7 @@ module "rds" {
 <!--- BEGIN_TF_DOCS --->
 
 <details>
-  <summary>Click to expand! [ Requirements | Providers | Modules | Inputs | Outputs </summary>
+  <summary> Click To Know [ Requirements | Providers | Modules | Inputs | Outputs </summary>
   
 ## Requirements
 
