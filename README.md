@@ -78,6 +78,10 @@ module "rds" {
 <!--- END_USAGE --->
 
 <!--- BEGIN_TF_DOCS --->
+
+<details>
+  <summary>Click to expand! [ Requirements | Providers | Modules | Inputs | Outputs </summary>
+  
 ## Requirements
 
 | Name | Version |
@@ -164,6 +168,8 @@ No provider.
 | param\_group\_name | param group Name |
 | password | database password |
 | username | database username |
+
+</details>
 
 <!--- END_TF_DOCS --->
 
