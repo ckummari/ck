@@ -8,7 +8,7 @@
 [![regression testing](https://github.com/sede-x/terraform-aws-rds/actions/workflows/regression-testing.yml/badge.svg)](https://github.com/sede-x/terraform-aws-rds/actions/workflows/regression-testing.yml)
 
 ### Usage
-
+## RegTest
 
 <!--- BEGIN_TF_DOCS --->
 
