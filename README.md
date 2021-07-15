@@ -1,16 +1,9 @@
-![GitHub language count](https://img.shields.io/github/languages/count/ckummari/ck)
 
-![GitHub language count](https://img.shields.io/github/languages/count/sede-x/terraform-aws-rds)
 
-### Terraform gitHub documentation [link](https://github.com/terraform-aws-modules)
-
-### Badges
-[![regression testing](https://github.com/sede-x/terraform-aws-rds/actions/workflows/regression-testing.yml/badge.svg)](https://github.com/sede-x/terraform-aws-rds/actions/workflows/regression-testing.yml)
-
-### Usage
-## Updage
+## Usage
 
 <!--- BEGIN_TF_DOCS --->
+
 ## Requirements
 
 | Name | Version |
