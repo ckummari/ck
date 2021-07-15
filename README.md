@@ -3,7 +3,6 @@
 ## Usage
 
 <!--- BEGIN_TF_DOCS --->
-
 ## Requirements
 
 | Name | Version |
@@ -29,13 +28,10 @@ No input.
 
 No output.
 
-
 <!--- END_TF_DOCS --->
 
 <!--- START_FOOTER --->
-
 Additional Documentation
-
 CONTRIBUTING.md
 SECURITY.md
 ISSUE_TEMPLATE.md
@@ -43,6 +39,5 @@ TF_MODULE_STRUCTURE
 PULL_REQUEST_CHECKLIST.md
 EACH_STEP.md
 PLAYBOOK.md
-
 <!--- END_FOOTER --->
 
